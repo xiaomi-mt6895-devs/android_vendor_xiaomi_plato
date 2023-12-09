@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/plato
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/plato/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
     vendor/xiaomi/plato/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
     vendor/xiaomi/plato/proprietary/vendor/bin/mi_thermald:$(TARGET_COPY_OUT_VENDOR)/bin/mi_thermald \
     vendor/xiaomi/plato/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
@@ -25,12 +26,61 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/plato/proprietary/vendor/etc/audio_param/VoWDspAec_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWDspAec_AudioParam.xml \
     vendor/xiaomi/plato/proprietary/vendor/etc/audio_param/VoWEngineFeature_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWEngineFeature_AudioParam.xml \
     vendor/xiaomi/plato/proprietary/vendor/etc/audio_param/VoWVoiceCommand_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWVoiceCommand_AudioParam.xml \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/CFR_para_UW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_UW.bin \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/CameraCPUControl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CameraCPUControl.xml \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/anc.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc.bin \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/com.xiaomi.dcal.wu.as2.golden:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wu.as2.golden \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/com.xiaomi.dcal.wu.golden:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wu.golden \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/ldc/AI_Seg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc/AI_Seg.bin \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/ldc/LDC_FPC_TUNING.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc/LDC_FPC_TUNING.bin \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/ldc/LDC_FPC_TUNING_AI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc/LDC_FPC_TUNING_AI.bin \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/ldc/LDC_PACKDATA.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc/LDC_PACKDATA.dat \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/miai_psn_config.yaml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/miai_psn_config.yaml \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/svq_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/svq_cache \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/xiaomi/dualbokehsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/dualbokehsnapshot.json \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/xiaomi/frontbokehsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/frontbokehsnapshot.json \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/xiaomi/frontsinglesnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/frontsinglesnapshot.json \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/xiaomi/frontsupernightsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/frontsupernightsnapshot.json \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/xiaomi/manualsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/manualsnapshot.json \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/xiaomi/normalpreview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/normalpreview.json \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/xiaomi/normalsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/normalsnapshot.json \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/xiaomi/satsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/satsnapshot.json \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/xiaomi/superhdsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/superhdsnapshot.json \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/xiaomi/superlowlightsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/superlowlightsnapshot.json \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartysnapshot.json \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/xiaomi/uwsuperlowlightshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/uwsuperlowlightshot.json \
     vendor/xiaomi/plato/proprietary/vendor/etc/cust_color.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color.xml \
     vendor/xiaomi/plato/proprietary/vendor/etc/cust_color_36.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_36.xml \
     vendor/xiaomi/plato/proprietary/vendor/etc/cust_color_42.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_42.xml \
     vendor/xiaomi/plato/proprietary/vendor/etc/cust_silky_brightness.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_silky_brightness.xml \
+    vendor/xiaomi/plato/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/xiaomi/plato/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
+    vendor/xiaomi/plato/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    vendor/xiaomi/plato/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
     vendor/xiaomi/plato/proprietary/vendor/etc/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_headphone.bin \
     vendor/xiaomi/plato/proprietary/vendor/etc/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_spk.bin \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_bootup.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_bootup.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_ese_disableIso.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_ese_disableIso.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_ese_disableIsoRead.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_ese_disableIsoRead.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_nfcon.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_nfcon.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_chr.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_chr.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_cui.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_cui.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_ese_1.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_1.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_ese_3.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_3.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_ese_aclog.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_aclog.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_ese_cplc.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_cplc.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_ese_fabkey.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_fabkey.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_ese_free.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_free.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_ese_keyset.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_keyset.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_ese_sei2c_disable.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_sei2c_disable.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_ese_sei2c_enable.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_sei2c_enable.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_ese_sei2c_read.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_sei2c_read.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_ese_sn.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_sn.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_ndi.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ndi.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_pcv.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_pcv.pnscr \
+    vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_pnx_sst.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_sst.pnscr \
     vendor/xiaomi/plato/proprietary/vendor/etc/thermal-4k.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-4k.conf \
     vendor/xiaomi/plato/proprietary/vendor/etc/thermal-8k.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-8k.conf \
     vendor/xiaomi/plato/proprietary/vendor/etc/thermal-arvr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-arvr.conf \
@@ -84,9 +134,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/plato/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
     vendor/xiaomi/plato/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
     vendor/xiaomi/plato/proprietary/vendor/lib64/hw/audio.primary.mt6895.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mt6895.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/hw/fingerprint.goodix_fod.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_fod.default.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/hw/sensors.mediatek.V2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mediatek.V2.0.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_param_parser-vnd.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/libhfmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfmanager.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmialgo_rfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_rfs.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmialgoengine2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoengine2.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/libmiresample.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiresample.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/libmisound.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmisound.so \
-    vendor/xiaomi/plato/proprietary/vendor/lib64/libmisoundcrossfade.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmisoundcrossfade.so
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmisoundcrossfade.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmisoundcrossfade.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsn100u_fw.so
