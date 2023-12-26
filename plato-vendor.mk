@@ -6,8 +6,36 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/plato
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/plato/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
     vendor/xiaomi/plato/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/ae/ParameterDB_ae.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/ae/ParameterDB_ae.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/af/ParameterDB_af.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/af/ParameterDB_af.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/awb/ParameterDB_awb.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/awb/ParameterDB_awb.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/awbsync/ParameterDB_awbsync.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/awbsync/ParameterDB_awbsync.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/feature/ParameterDB_feature.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/feature/ParameterDB_feature.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/flash/ParameterDB_flash.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/flash/ParameterDB_flash.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/ParameterDB_flashcali.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/ParameterDB_flashcali.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/ParameterDB.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/ParameterDB.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/top_control_data.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/top_control_data.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/pd/ParameterDB_pd.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/pd/ParameterDB_pd.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/ParameterDB_pipeline.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/ParameterDB_pipeline.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tone/ParameterDB_tone.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tone/ParameterDB_tone.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/ISP_mapping.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/ISP_param.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ISP_info.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ISP_info.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platogc02m1_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platogc02m1_mipi_raw/ISP_mapping.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platogc02m1_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platogc02m1_mipi_raw/ISP_param.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platoimx596_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platoimx596_mipi_raw/ISP_mapping.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platoimx596_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platoimx596_mipi_raw/ISP_param.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5k4h7_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5k4h7_mipi_raw/ISP_mapping.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5k4h7_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5k4h7_mipi_raw/ISP_param.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5khm6_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5khm6_mipi_raw/ISP_mapping.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5khm6_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5khm6_mipi_raw/ISP_param.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5khm6_mipi_raw_2/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5khm6_mipi_raw_2/ISP_mapping.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5khm6_mipi_raw_2/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5khm6_mipi_raw_2/ISP_param.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5khm6_mipi_raw_3/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5khm6_mipi_raw_3/ISP_mapping.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5khm6_mipi_raw_3/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/platos5khm6_mipi_raw_3/ISP_param.db \
+    vendor/xiaomi/plato/proprietary/vendor/bin/hw/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/camerahalserver \
     vendor/xiaomi/plato/proprietary/vendor/bin/mi_thermald:$(TARGET_COPY_OUT_VENDOR)/bin/mi_thermald \
     vendor/xiaomi/plato/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
     vendor/xiaomi/plato/proprietary/vendor/etc/audio_param/FV-SAM-MTKXX.dat:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/FV-SAM-MTKXX.dat \
@@ -28,16 +56,27 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/plato/proprietary/vendor/etc/audio_param/VoWVoiceCommand_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWVoiceCommand_AudioParam.xml \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/CFR_para_UW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_UW.bin \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/CameraCPUControl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CameraCPUControl.xml \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/F1_pink.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/F1_pink.cng \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/ai_scene.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ai_scene.bin \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/anc.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc.bin \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/apu_miai_preview.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/apu_miai_preview.bin \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/com.xiaomi.dcal.wu.as2.golden:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wu.as2.golden \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/com.xiaomi.dcal.wu.golden:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wu.golden \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/deblur_sd_opencl_binary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/deblur_sd_opencl_binary.bin \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/deblur_sd_opencl_params.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/deblur_sd_opencl_params.bin \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/deblur_txt_apu.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/deblur_txt_apu.bin \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/gma_custom.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gma_custom.txt \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/ldc/AI_Seg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc/AI_Seg.bin \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/ldc/LDC_FPC_TUNING.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc/LDC_FPC_TUNING.bin \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/ldc/LDC_FPC_TUNING_AI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc/LDC_FPC_TUNING_AI.bin \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/ldc/LDC_PACKDATA.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc/LDC_PACKDATA.dat \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/miai_psn_config.yaml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/miai_psn_config.yaml \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/mibokeh_mt6873_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_mt6873_opencl.bin \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/mibokeh_mt6873_parameter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_mt6873_parameter.bin \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/quantize_mtk_0.00246_1800-360620_singleinput_bs1_1285.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/quantize_mtk_0.00246_1800-360620_singleinput_bs1_1285.dla \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/svq_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/svq_cache \
+    vendor/xiaomi/plato/proprietary/vendor/etc/camera/video_bokeh_apu_front_20210413.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/video_bokeh_apu_front_20210413.bin \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/xiaomi/dualbokehsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/dualbokehsnapshot.json \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera/xiaomi/frontbokehsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/frontbokehsnapshot.json \
@@ -55,6 +94,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/plato/proprietary/vendor/etc/cust_color_36.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_36.xml \
     vendor/xiaomi/plato/proprietary/vendor/etc/cust_color_42.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_42.xml \
     vendor/xiaomi/plato/proprietary/vendor/etc/cust_silky_brightness.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_silky_brightness.xml \
+    vendor/xiaomi/plato/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/plato/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/plato/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/xiaomi/plato/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
@@ -131,17 +171,422 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/plato/proprietary/vendor/firmware/goodix_firmware_l12a_new.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware_l12a_new.bin \
     vendor/xiaomi/plato/proprietary/vendor/firmware/goodix_test_limits_1_255.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_test_limits_1_255.csv \
     vendor/xiaomi/plato/proprietary/vendor/firmware/goodix_test_limits_255.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_test_limits_255.csv \
+    vendor/xiaomi/plato/proprietary/vendor/firmware/lib3a.ccu:$(TARGET_COPY_OUT_VENDOR)/firmware/lib3a.ccu \
+    vendor/xiaomi/plato/proprietary/vendor/firmware/lib3a.ccu_dummy:$(TARGET_COPY_OUT_VENDOR)/firmware/lib3a.ccu_dummy \
     vendor/xiaomi/plato/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
     vendor/xiaomi/plato/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.arcsoftsr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.arcsoftsr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.capbokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.capbokeh.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.dc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.dc.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.depurple.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.depurple.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.hdr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.ldc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.ldc.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.memcpy.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.miaideblur.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.miaideblur.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.miaiie.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.miaiie.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.mibokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.mibokeh.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.mifragment.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.mifragment.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.misegment.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.misegment.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.rawsuperlight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.rawsuperlight.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.skinbeautifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.skinbeautifier.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.superlowlight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.superlowlight.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.supernight.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/com.xiaomi.plugin.swflip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.swflip.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/hw/audio.primary.mt6895.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mt6895.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/hw/fingerprint.goodix_fod.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_fod.default.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/hw/sensors.mediatek.V2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mediatek.V2.0.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.1-impl.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.ae.pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ae.pipe.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libArcNetMtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libArcNetMtk.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libBasicModule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBasicModule.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libJpgEncPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libJpgEncPipe.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libSQLiteModule_VER_ALL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSQLiteModule_VER_ALL.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libai_pq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libai_pq.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libai_sdr2hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libai_sdr2hdr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libai_sdr2hdr_auth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libai_sdr2hdr_auth.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaispq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaispq.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libalAILDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalAILDC.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libalAI_Seg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalAI_Seg.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libalCFR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalCFR.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libalLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalLDC.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libalNN.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalNN.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libalNN_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalNN_engine.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libalNN_gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalNN_gpu.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libalhLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalhLDC.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libanc_calibration_parser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_calibration_parser.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libanc_supervq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_supervq.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_distortion_correction.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_image.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_video.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libarcsoft_hdr_detection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_detection.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libarcsoft_high_dynamic_range_v5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range_v5.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_low_light_hdr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libarcsoft_mf_superresolution.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_mf_superresolution.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libarcsoft_portrait_lighting.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_lighting.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libarcsoft_portrait_lighting_c.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_lighting_c.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_super_night_raw.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libarcsoft_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_supernight.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_param_parser-vnd.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libbeauty_face_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbeauty_face_interface.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.WarpMapResizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.WarpMapResizer.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.dngop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.dngop.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.eis.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.fdft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.fdft.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.fsc.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.gyro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.gyro.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.hdr10p.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.hdr10p.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.lmv.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.mcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.mcnr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.n3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.n3d.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.platform.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.utility.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.utility.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.vsdofUtil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.vsdofUtil.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.warp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.warp.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamera_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_scene.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcameraplatforminfoxiaomi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameraplatforminfoxiaomi.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libceres.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libceres.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libdeflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdeflicker.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeaturepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeaturepolicy.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libgz_uree.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgz_uree.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libheichal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libheichal.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/libhfmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfmanager.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimagebuffer_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimagebuffer_wrapper.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha-oal_vendor.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha_vendor.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmiStereoFactoryRemapBasicLib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiStereoFactoryRemapBasicLib.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmiStereoFactoryRemapLib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiStereoFactoryRemapLib.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmiai_deblur.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiai_deblur.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmiai_portraitsupernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiai_portraitsupernight.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmialgo_ie_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_ie_capture.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/libmialgo_rfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_rfs.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmialgo_sd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_sd.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmialgo_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_utils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmialgoengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoengine.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/libmialgoengine2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoengine2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmibokeh_845_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_845_video.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmibokeh_mt6873.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_mt6873.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libminiui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminiui.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmipc.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/libmiresample.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiresample.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/libmisound.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmisound.so \
     vendor/xiaomi/plato/proprietary/vendor/lib64/libmisoundcrossfade.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmisoundcrossfade.so \
-    vendor/xiaomi/plato/proprietary/vendor/lib64/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsn100u_fw.so
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmispowerop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmispowerop.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_3rdcalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdcalibration.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_fdWarpConvert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_fdWarpConvert.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_thirdparty.customzone.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.customzone.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkisp_metadata_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkisp_metadata_v2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsn100u_fw.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libvideofilter_only.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideofilter_only.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libvidhance_active_ois.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_active_ois.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libvidhance_autozoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_autozoom.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libvidhance_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_dmbr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libvidhance_face_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_face_stabilizer.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libvidhance_horizon_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_horizon_correction.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libvidhance_ldc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_ldc.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libvidhance_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_stabilizer.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libvidhance_super_stabilization.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_super_stabilization.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.ae.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ae.core.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ae.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.af.assist.models1d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.af.assist.models1d.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.af.assist.models2d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.af.assist.models2d.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.af.assist.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.af.assist.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.af.assist.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.af.assist.utils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.af.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.af.core.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.af.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.aishutter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.aishutter.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.alsflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.alsflicker.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.awb.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.awb.core.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.awbsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.awbsync.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.cculog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.cculog.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.custom.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.custom.ae.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.flash.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.flicker.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.log.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.sensors.color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.sensors.color.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.sensors.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.sensors.flicker.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib3a.stat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.stat.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libAIODcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAIODcore.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libAIOTcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAIOTcore.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libAITrackingAFMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAITrackingAFMgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libDBAccessor_ISP.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDBAccessor_ISP.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libMtkMediaController.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkMediaController.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libSonyIMX519PdafWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX519PdafWrapper.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/lib_bsscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bsscore.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaaa_afassist.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_afassist.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaaa_feature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_feature.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaaa_gma.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_gma.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaaa_ltm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_ltm.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaaa_ltmx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_ltmx.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaaa_tnc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_tnc.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaaa_toneutil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_toneutil.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaiawb_fs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiawb_fs.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaiawb_fs_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiawb_fs_model.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaiawb_moon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiawb_moon.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaiawb_moon_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiawb_moon_model.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaiawb_p1ggm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiawb_p1ggm.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaiawb_sun.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiawb_sun.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaiawb_sun_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiawb_sun_model.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaibc_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaibc_tuning.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaibc_tuning_p2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaibc_tuning_p2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaibc_tuning_p3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaibc_tuning_p3.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaicapturecore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaicapturecore.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libaidepth_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidepth_tuning.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libalgo.aosp.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.aosp.log.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libapudcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapudcutils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.3a_isp.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.3a_isp.utils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.afmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.afmgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.chdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.chdr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.feature_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.feature_utils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.fw_me_tcy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.fw_me_tcy.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.afassitmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.afassitmgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.cctsvr.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.cctsvr.v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.ctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.ctrl.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.guard.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.guard.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.ircutdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.ircutdrv.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.lensdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.lensdrv.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.log.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.lscMgrApi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.lscMgrApi.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.oisdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.oisdrv.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.ozoomdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.ozoomdrv.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.policy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.policy.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.tofdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.tofdrv.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.utils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.v3.ae.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.ae.v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.v3.ai3a_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.ai3a_v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.v3.awb_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.awb_v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.v3.cac.mgr.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.cac.mgr.v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.v3.dng.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.dng.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.v3.flash.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.flash.v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.v3.flicker.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.flicker.v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.v3.ir.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.ir.v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.v3.lsctbl.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.lsctbl.v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.v3.nvram.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.nvram.v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.v3.sensor.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.sensor.v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.v3.strobe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.strobe.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.v3.stt_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.stt_v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.hal3a.v3.tone.mgr.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.tone.mgr.v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.halisp.TopCtrlMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.TopCtrlMgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.halisp.TuningDataProvider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.TuningDataProvider.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.halisp.TuningDataProviderFactory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.TuningDataProviderFactory.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.halisp.imp.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.imp.v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.halisp.plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.plugin.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.halisp.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.utils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.halisp.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.halsensor.hwintegration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halsensor.hwintegration.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.halsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halsensor.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.isptuning.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.isptuning.v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.peripheralcontroller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.peripheralcontroller.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.tuningcachemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.tuningcachemgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.utils.sensorprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.utils.sensorprovider.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam.vhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.vhdr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam_ipc_hal3a_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam_ipc_hal3a_client.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam_ipc_halisp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam_ipc_halisp_client.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcam_ipc_nvbuf_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam_ipc_nvbuf_client.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.BSSwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.BSSwrapper.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.Mfbllwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.Mfbllwrapper.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.aibc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.aibc.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.aibcwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.aibcwrapper.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.aihdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.aihdr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.ainr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.ainr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.ais2.bss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.ais2.bss.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.ais2.mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.ais2.mfnr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.ais2.mstm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.ais2.mstm.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.bss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.bss.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.fus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.fus.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.lsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.lsc.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.mfnr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.platform2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.platform2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.rotate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.rotate.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.vaidepth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.vaidepth.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.vainr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.vainr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamalgo.vsf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.vsf.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamera.custom.af_assist_buf_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.custom.af_assist_buf_mgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamera.custom.af_assist_buf_mgr_open.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.custom.af_assist_buf_mgr_open.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamera.custom.af_assist_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.custom.af_assist_mgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamera.custom.af_assist_pdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.custom.af_assist_pdp.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamera.customae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.customae.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamera.customaf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.customaf.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamera.customawb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.customawb.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcamera.customflk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.customflk.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcameracustom.camera.3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.camera.3a.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcameracustom.camera.isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.camera.isp.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcameracustom.camera.sensors.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.camera.sensors.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcameracustom.camera_calibration.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.camera_calibration.core.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcameracustom.camera_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.camera_exif.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcameracustom.cfg_setting.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.cfg_setting.core.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcameracustom.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.eis.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcameracustom.flashlight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.flashlight.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcameracustom.imgsensor.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.imgsensor.core.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcameracustom.lens.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.lens.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcameracustom.plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.plugin.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libccd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libccd.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libeffecthal.base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffecthal.base.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeature.face.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.face.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeature.fwmvp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.fwmvp.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeature.hdr10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.hdr10.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeature.mcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.mcnr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeature.stereo.provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.stereo.provider.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeature.vainr.hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.vainr.hal.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeature.vsdof.3a_info_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.vsdof.3a_info_provider.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeature.vsdof.hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.vsdof.hal.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeature_eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_eis.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeature_fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_fsc.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeature_rss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_rss.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeature_vrp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_vrp.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeatureiodrv_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeatureiodrv_mem.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libfeaturepolicy_dbhandler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeaturepolicy_dbhandler.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_adl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_adl.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_cmt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_cmt.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_daemon.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_dip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_dip.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_drvcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_drvcommon.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_gce.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_gce.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_main.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_main.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_me.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_me.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_pqdip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_pqdip.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_sensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_sensor.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_system.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_taskhandler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_taskhandler.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_tdrhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_tdrhal.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_traw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_traw.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_utils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libimgsys_wpe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsys_wpe.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libispfeature_mtkcam.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libispfeature_mtkcam.v4l2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/liblpnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblpnr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmfllcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmfllcore.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmgr3a.adapt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmgr3a.adapt.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk_drvb.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam.atmseventmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.atmseventmgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam.debugwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.debugwrapper.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.eventcallback.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam.featurepipe.capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.capture.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam.featurepipe.depthmap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.depthmap.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam.featurepipe.p2g.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.p2g.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam.featurepipe.streaming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.streaming.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam.featurepipe.vsdof.wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.vsdof.wrapper.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam.logicalcaminfoprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.logicalcaminfoprovider.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam.logicalmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.logicalmodule.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_aie.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_aie.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_android_zslprocessor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_android_zslprocessor.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_buffer_flush.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_buffer_flush.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_ca.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_calibration_convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_calibration_convertor.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_calibration_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_calibration_provider.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_camcontroller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_camcontroller.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_camcoordinator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_camcoordinator.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_camctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_camctrl.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_coredev.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_coredev.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_custzone.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_custzone.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_debugutils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_devicemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_devicemgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_diputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_diputils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_dma_map.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_dma_map.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_exif.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_faceResultHandler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_faceResultHandler.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_grallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_grallocutils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal3a_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal3a_provider.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_android_app_cbadaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_app_cbadaptor.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_android_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_common.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_android_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_device.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_android_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_provider.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_android_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_utils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_core_app.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_app.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_core_app_cbadaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_app_cbadaptor.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_core_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_device.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_core_devicesessionpolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_devicesessionpolicy.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_core_featurepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_featurepolicy.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_core_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_provider.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_core_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_utils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_custom.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_custom_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_custom_provider.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_hidl_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_hidl_common.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_hidl_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_hidl_device.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_hidl_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_hidl_provider.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hal_hidl_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_hidl_utils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hwnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwnode.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hwutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwutils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hwutils_android.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwutils_android.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_hwutils_poweronoffcontroller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwutils_poweronoffcontroller.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_imgbuf_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_imgbuf_v2.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_ipc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_ipc_core.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_ipc_wrapper_common_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_ipc_wrapper_common_client.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_ipc_wrapper_common_server.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_ipc_wrapper_common_server.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_ipc_wrapper_mtk_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_ipc_wrapper_mtk_client.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_ipc_wrapper_mtk_server.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_ipc_wrapper_mtk_server.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_jsonconvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_jsonconvertor.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_jsondata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_jsondata.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_mapping_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_mapping_mgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_metaconv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_metaconv.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_metadata.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_metastore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_metastore.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_modulefactory_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_modulefactory_custom.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_modulefactory_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_modulefactory_utils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_modulehelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_modulehelper.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_packutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_packutils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_pipeline.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipeline.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_pipeline_fbm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipeline_fbm.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_pipelinemodel_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_capture.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_pipelinemodel_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_session.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_pipelinemodel_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_utils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_pipelinepolicy-security.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy-security.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_pipelinepolicy-smvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy-smvr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_pipelinepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_pipelinepolicy_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy_factory.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_pipemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipemgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_postprocprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_postprocprovider.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_prerelease.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_prerelease.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_proc.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_request_requlator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_request_requlator.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_sensorcontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_sensorcontrol.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_simager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_simager.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_stdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_stdutils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_streamutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_streamutils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_synchelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_synchelper.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_sysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_sysutils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_thirdparty.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.core.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_thirdparty.customer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.customer.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_thirdparty.customzone.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.customzone.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_thirdparty.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.mtk.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_thirdparty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_tuning_utils.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_ulog.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libmtkcm_ipc_dummy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcm_ipc_dummy.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libpda_usdriver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpda_usdriver.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libstereoinfoaccessor_vsdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstereoinfoaccessor_vsdof.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/libvainr_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvainr_model.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/mtk000_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtk000_mipi_raw_IdxMgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/mtk000_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtk000_mipi_raw_tuning.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/platogc02m1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/platogc02m1_mipi_raw_IdxMgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/platogc02m1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/platogc02m1_mipi_raw_tuning.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/platoimx596_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/platoimx596_mipi_raw_IdxMgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/platoimx596_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/platoimx596_mipi_raw_tuning.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/platos5k4h7_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/platos5k4h7_mipi_raw_IdxMgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/platos5k4h7_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/platos5k4h7_mipi_raw_tuning.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/platos5khm6_mipi_raw_2_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/platos5khm6_mipi_raw_2_IdxMgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/platos5khm6_mipi_raw_2_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/platos5khm6_mipi_raw_2_tuning.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/platos5khm6_mipi_raw_3_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/platos5khm6_mipi_raw_3_IdxMgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/platos5khm6_mipi_raw_3_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/platos5khm6_mipi_raw_3_tuning.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/platos5khm6_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/platos5khm6_mipi_raw_IdxMgr.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/platos5khm6_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/platos5khm6_mipi_raw_tuning.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.atms@1.0.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.device@3.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.device@3.6.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.security@1.0.so
